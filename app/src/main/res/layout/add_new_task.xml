@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewTask">
+
+    <EditText
+        android:id="@+id/task_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="11dp"
+        android:backgroundTint="@color/greenbsi"
+        android:hint="Nama Nasabah"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/task_edittext2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/greenbsi"
+        android:hint="Karatase Emas"
+        android:textSize="10dp"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/task_edittext3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/task_edittext" />
+
+    <EditText
+        android:id="@+id/task_edittext3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/greenbsi"
+        android:hint="HDE"
+        android:textSize="10dp"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/task_edittext"
+        app:layout_constraintStart_toStartOf="@+id/task_edittext"
+        app:layout_constraintTop_toBottomOf="@+id/task_edittext" />
+
+    <EditText
+        android:id="@+id/task_edittext4"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/greenbsi"
+        android:hint="Berat Bersih"
+        android:textSize="10dp"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/task_edittext3"
+        app:layout_constraintTop_toBottomOf="@+id/task_edittext" />
+
+    <EditText
+        android:id="@+id/task_edittext5"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/greenbsi"
+        android:clickable="false"
+        android:editable="false"
+        android:hint="Pinjaman Gadai"
+        android:textColorHint="@color/greenbsi"
+        android:textSize="10dp"
+        app:layout_constraintStart_toStartOf="@+id/task_edittext2"
+        app:layout_constraintTop_toBottomOf="@+id/task_edittext2" />
+
+    <EditText
+        android:id="@+id/task_edittext6"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/greenbsi"
+        android:clickable="false"
+        android:editable="false"
+        android:hint="Ujroh / 4 Bulan"
+        android:textColorHint="@color/greenbsi"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/task_edittext4"
+        app:layout_constraintTop_toBottomOf="@+id/task_edittext4" />
+
+    <TextView
+        android:id="@+id/set_due_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:drawableRight="@drawable/gambar_calendar"
+        android:drawablePadding="7dp"
+        android:text="Set Tanggal Pegadaian"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/tw_B1"
+        app:layout_constraintTop_toBottomOf="@+id/et_B1" />
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/greenbsi"
+        android:text="Save"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_once_message" />
+
+    <Button
+        android:id="@+id/hitung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:background="@color/greenbsi"
+        android:text="Hitung"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/save_btn"
+        app:layout_constraintEnd_toStartOf="@+id/save_btn"
+        app:layout_constraintTop_toTopOf="@+id/save_btn" />
+
+    <TextView
+        android:id="@+id/ib_once_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:drawableRight="@drawable/gambar_daterange"
+        android:drawablePadding="5dp"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/tv_once_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Tanggal dan Bulan"
+
+        app:layout_constraintBottom_toBottomOf="@+id/ib_once_date"
+        app:layout_constraintStart_toEndOf="@+id/ib_once_date"
+        app:layout_constraintTop_toTopOf="@+id/ib_once_date" />
+
+    <TextView
+        android:id="@+id/tv_once_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Jam"
+
+        app:layout_constraintBottom_toBottomOf="@+id/ib_once_time"
+        app:layout_constraintStart_toEndOf="@+id/ib_once_time"
+        app:layout_constraintTop_toTopOf="@+id/ib_once_time" />
+
+    <TextView
+        android:id="@+id/ib_once_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableRight="@drawable/gambar_time"
+
+        android:drawablePadding="5dp"
+        app:layout_constraintStart_toStartOf="@+id/ib_once_date"
+        app:layout_constraintTop_toBottomOf="@+id/ib_once_date" />
+
+    <EditText
+        android:id="@+id/et_once_message"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:backgroundTint="@color/greenbsi"
+        android:ems="10"
+        android:hint="Pesan Jatuh tempo"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/ib_once_time"
+        app:layout_constraintTop_toBottomOf="@+id/ib_once_time" />
+
+    <EditText
+        android:id="@+id/et_B1"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/greenbsi"
+        android:clickable="false"
+        android:editable="false"
+        android:ems="10"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tw_B1"
+        app:layout_constraintStart_toEndOf="@+id/tw_B1"
+        app:layout_constraintTop_toTopOf="@+id/tw_B1" />
+
+    <EditText
+        android:id="@+id/et_B2"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/greenbsi"
+        android:clickable="false"
+        android:editable="false"
+        android:ems="10"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tw_B2"
+        app:layout_constraintStart_toEndOf="@+id/tw_B2"
+        app:layout_constraintTop_toTopOf="@+id/tw_B2" />
+
+    <EditText
+        android:id="@+id/et_B3"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/greenbsi"
+        android:clickable="false"
+        android:editable="false"
+        android:ems="10"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tw_B3"
+        app:layout_constraintStart_toEndOf="@+id/tw_B3"
+        app:layout_constraintTop_toTopOf="@+id/tw_B3" />
+
+    <EditText
+        android:id="@+id/et_B4"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/greenbsi"
+        android:clickable="false"
+        android:editable="false"
+        android:ems="10"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tw_B4"
+        app:layout_constraintStart_toEndOf="@+id/tw_B4"
+        app:layout_constraintTop_toTopOf="@+id/tw_B4" />
+
+    <TextView
+        android:id="@+id/tw_B1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="B1"
+        android:textColor="@color/greenbsi"
+        android:textSize="10dp"
+        app:layout_constraintStart_toStartOf="@+id/task_edittext5"
+        app:layout_constraintTop_toBottomOf="@+id/task_edittext5" />
+
+    <TextView
+        android:id="@+id/tw_B2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="B2"
+        android:textColor="@color/greenbsi"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_B1"
+        app:layout_constraintStart_toEndOf="@+id/et_B1"
+        app:layout_constraintTop_toTopOf="@+id/et_B1" />
+
+    <TextView
+        android:id="@+id/tw_B3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="B3"
+        android:textColor="@color/greenbsi"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_B2"
+        app:layout_constraintStart_toEndOf="@+id/et_B2"
+        app:layout_constraintTop_toTopOf="@+id/et_B2" />
+
+    <TextView
+        android:id="@+id/tw_B4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:text="B4"
+        android:textColor="@color/greenbsi"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_B3"
+        app:layout_constraintStart_toEndOf="@+id/et_B3"
+        app:layout_constraintTop_toTopOf="@+id/et_B3" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Set Jatuh Tempo Pegadaian"
+        android:textColor="@color/greenbsi"
+        app:layout_constraintStart_toStartOf="@+id/set_due_tv"
+        app:layout_constraintTop_toBottomOf="@+id/set_due_tv" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="109dp">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/mcheckbox"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:buttonTint="@color/greenbsi"
+                android:paddingStart="10dp"
+                android:text="Nama Nasabah"
+                android:drawableLeft="@drawable/gambar_user"
+                android:drawablePadding="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/due_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="4-3-2022"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/karatase_emas" />
+
+            <TextView
+                android:id="@+id/karatase_emas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:text="EmasKarat"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mcheckbox" />
+
+            <TextView
+                android:id="@+id/berat_bersih"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="BeratBersih"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/karatase_emas"
+                app:layout_constraintTop_toBottomOf="@+id/mcheckbox" />
+
+            <TextView
+                android:id="@+id/hde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="HDE"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/berat_bersih"
+                app:layout_constraintTop_toBottomOf="@+id/mcheckbox" />
+
+            <TextView
+                android:id="@+id/tgljatuhtempo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="4-4-2022"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/due_date_tv"
+                app:layout_constraintStart_toEndOf="@+id/due_date_tv"
+                app:layout_constraintTop_toTopOf="@+id/due_date_tv" />
+
+            <TextView
+                android:id="@+id/ujrohb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="UjrohB1"
+                android:textSize="9sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/due_date_tv" />
+
+            <TextView
+                android:id="@+id/ujrohb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="UjrohB2"
+                android:textSize="9sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ujrohb1"
+                app:layout_constraintStart_toEndOf="@+id/ujrohb1"
+                app:layout_constraintTop_toTopOf="@+id/ujrohb1" />
+
+            <TextView
+                android:id="@+id/ujrohb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="UjrohB3"
+                android:textSize="9sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ujrohb2"
+                app:layout_constraintStart_toEndOf="@+id/ujrohb2"
+                app:layout_constraintTop_toTopOf="@+id/ujrohb2" />
+
+            <TextView
+                android:id="@+id/ujrohb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="UjrohB4"
+                android:textSize="9sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ujrohb3"
+                app:layout_constraintStart_toEndOf="@+id/ujrohb3"
+                app:layout_constraintTop_toTopOf="@+id/ujrohb3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
